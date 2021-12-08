@@ -66,35 +66,35 @@ For more information on a specific command, just type the command on terminal wh
 
 | [AddTransactionSign](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ApproveProposal](#Approvecancel-the-proposal)  | [AssetIssue](#How-to-issue-TRC10-tokens) |
 | :---------:|:---------:|:--------: |
-| [BackupShieldedTRC20Wallet](#How-to-transfer-shielded-TRC20-token) | [BackupWallet](#Wallet-related-commands)| [BackupWallet2Base64](#Wallet-related-commands) |
-| [BroadcastTransaction](#Some-others) | [ChangePassword](#Wallet-related-commands)| [CreateProposal](#How-to-initiate-a-proposal) 
-| [DeleteProposal](#Cancel-the-created-proposal) | [DeployContract](#How-to-use-smart-contract) | [ExchangeCreate](#How-to-trade-on-the-exchange) |
-| [ExchangeInject](#How-to-trade-on-the-exchange) | [ExchangeTransaction](#How-to-trade-on-the-exchange) | [ExchangeWithdraw](#How-to-trade-on-the-exchange) |
-| [CdBalance](#How-to-delegate-resourcee) | [GenerateAddress](#Account-related-commands) | [GenerateShieldedTRC20Address](#How-to-transfer-shielded-TRC20-token)|
+| [BackupShieldedTRC20Wallet](#BackupShieldedTRC20Wallet) | [BackupWallet](#Wallet-related-commands)| [BackupWallet2Base64](#Wallet-related-commands) |
+| [BroadcastTransaction](#Some-others) | [ChangePassword](#Wallet-related-commands)| [CreateProposal](#How-to-operate-with-proposal) 
+| [DeleteProposal](#Delete-an-existing-proposal) | [DeployContract](#How-to-use-smart-contract) | [ExchangeCreate](#How-to-trade-on-the-exchange) |
+| [ExchangeInject](#Capital-injection) | [ExchangeTransaction](#Transactions) | [ExchangeWithdraw](#Capital-Withdrawal) |
+| [CdBalance](#How-to-cd/uncd-balance) | [GenerateAddress](#Account-related-commands) | [GenerateShieldedTRC20Address](#How-to-transfer-shielded-TRC20-token)|
 | [GetAccount](#Account-related-commands) |[GetAccountNet](#Account-related-commands) | [GetAccountResource](#Account-related-commands) | 
-| [GetAddress](#Account-related-commands) | [GetAkFromAsk](#How-to-transfer-shielded-TRC20-token) |[GetAssetIssueByAccount](#How-to-issue-TRC10-tokens) | 
-| [GetAssetIssueById](#How-to-issue-TRC10-tokens) | [GetAssetIssueByName](#How-to-issue-TRC10-tokens) |[GetAssetIssueListByName](#How-to-issue-TRC10-tokens) | 
+| [GetAddress](#Account-related-commands) | [GetAkFromAsk](#How-to-transfer-shielded-TRC20-token) |[GetAssetIssueByAccount](#Update-parameters-of-TRC10-token) | 
+| [GetAssetIssueById](#How-to-obtain-TRC10-token-information) | [GetAssetIssueByName](#How-to-obtain-TRC10-token-information) |[GetAssetIssueListByName](#How-to-obtain-TRC10-token-information) | 
 | [GetBalance](#Account-related-commands) | [GetBlock](#How-to-get-block-information) |[GetBlockById](#How-to-get-block-information) | 
 | [GetBlockByLatestNum](#How-to-get-block-information) | [GetBlockByLimitNext](#How-to-get-block-information) | [GetBrokerage](#Brokerage) | 
-| [GetContract](#How-to-use-smart-contracts) | [GetDelegatedResource](#How-to-delegate-resource) |[GetDelegatedResourceAccountIndex](#How-to-delegate-resource) | 
-| [GetDiversifier](#How-to-transfer-shielded-TRC20-token)| [GetExpandedSpendingKey](#How-to-transfer-shielded-TRC20-token)| [GetIncomingViewingKey](#How-to-transfer-shielded-TRC20-token)  | 
-| [GetMarketOrderByAccount](#How-to-use-stabila-dex-to-sell-asset)| [GetMarketOrderById](#How-to-use-stabila-dex-to-sell-asset)| [GetMarketOrderListByPair](#How-to-use-stabila-dex-to-sell-asset)  | 
-| [GetMarketPairList](#How-to-use-stabila-dex-to-sell-asset)| [GetMarketPriceByPair](#How-to-use-stabila-dex-to-sell-asset)| [GetNextMaintenanceTime](#Some-others) | 
-| [GetNkFromNsk](#How-to-transfer-shielded-TRC20-token) | [GetProposal](#Get-proposal-information) | [GetShieldedPaymentAddress](#How-to-transfer-shielded-TRC20-token)| 
-| [GetSpendingKey](#How-to-transfer-shielded-TRC20-token) | [GetReward](#Brokerage) |  [GetTransactionApprovedList](#How-to-use-the-multi-signature-feature-of-wallet-cli) |
+| [GetContract](#get-details-of-a-smart-contract) | [GetDelegatedResource](#How-to-delegate-resource) |[GetDelegatedResourceAccountIndex](#get-resource-delegation-information) | 
+| [GetDiversifier](#GetDiversifier)| [GetExpandedSpendingKey](#How-to-transfer-shielded-TRC20-token)| [GetIncomingViewingKey](#GetIncomingViewingKey)  | 
+| [GetMarketOrderByAccount](#GetMarketOrderByAccount)| [GetMarketOrderById](#GetMarketOrderById)| [GetMarketOrderListByPair](#GetMarketOrderListByPair)  | 
+| [GetMarketPairList](#GetMarketPairList)| [GetMarketPriceByPair](#GetMarketPriceByPair)| [GetNextMaintenanceTime](#Some-others) | 
+| [GetNkFromNsk](#How-to-transfer-shielded-TRC20-token) | [GetProposal](#Obtain-proposal-information) | [GetShieldedPaymentAddress](#How-to-transfer-shielded-TRC20-token)| 
+| [GetSpendingKey](#How-to-transfer-shielded-TRC20-token) | [GetReward](#Brokerage) |  [GetTransactionApprovedList](#Get-signature-information-according-to-transactions) |
 | [GetTransactionById](#How-to-get-transaction-information) | [GetTransactionCountByBlockNum](#How-to-get-transaction-information) | [GetTransactionInfoByBlockNum](#How-to-get-transaction-information) | 
-| [GetTransactionInfoById](#How-to-get-transaction-information) | [GetTransactionSignWeight](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ImportShieldedTRC20Wallet](#How-to-transfer-shielded-TRC20-token) | 
-| [ImportWallet](#Wallet-related-commands) | [ImportWalletByBase64](#Wallet-related-commands) | [ListAssetIssue](#Get-Token10) | 
-| [ListExchanges](#How-to-trade-on-the-exchange) | [ListExchangesPaginated](#How-to-trade-on-the-exchange) | [ListNodes](#Some-others) | 
-| [ListShieldedTRC20Address](#How-to-transfer-shielded-TRC20-token) | [ListShieldedTRC20Note](#How-to-transfer-shielded-TRC20-token) | [ListProposals](#How-to-initiate-a-proposal) | 
-| [ListProposalsPaginated](#How-to-initiate-a-proposal) | [ListExecutives](#Some-others) | [LoadShieldedTRC20Wallet](#How-to-transfer-shielded-TRC20-token) | 
-| [Login](#Command-line-operation-flow-example) | [MarketCancelOrder](#How-to-use-stabila-dex-to-sell-asset) | [MarketSellAsset](#How-to-use-stabila-dex-to-sell-asset)| 
-| [ParticipateAssetIssue](#How-to-issue-TRC10-tokens) | [RegisterWallet](#Wallet-related-commands) | [ResetShieldedTRC20Note](#How-to-transfer-shielded-TRC20-token) | 
-| [ScanShieldedTRC20NoteByIvk](#How-to-transfer-shielded-TRC20-token) |  [ScanShieldedTRC20NoteByOvk](#How-to-transfer-shielded-TRC20-token) |[SendCoin](#How-to-use-the-multi-signature-feature-of-wallet-cli) | 
-| [SendShieldedTRC20Coin](#How-to-transfer-shielded-TRC20-token) | [SendShieldedTRC20CoinWithoutAsk](#How-to-transfer-shielded-TRC20-token) | [SetShieldedTRC20ContractAddress](#How-to-transfer-shielded-TRC20-token) | 
-| [ShowShieldedTRC20AddressInfo](#How-to-transfer-shielded-TRC20-token) | [TransferAsset](#How-to-issue-TRC10-tokens) | [TriggerContract](#How-to-use-smart-contracts) |
-| [UncdAsset](#How-to-issue-TRC10-tokens) | [UncdBalance](#How-to-delegate-resource) |[UpdateAsset](#How-to-issue-TRC10-tokens) | 
-| [UpdateBrokerage](#Brokerage) | [UpdateUcrLimit](#How-to-use-smart-contracts) |[UpdateSetting](#How-to-use-smart-contracts) | 
+| [GetTransactionInfoById](#How-to-get-transaction-information) | [GetTransactionSignWeight](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ImportShieldedTRC20Wallet](#ImportShieldedTRC20Wallet) | 
+| [ImportWallet](#Wallet-related-commands) | [ImportWalletByBase64](#Wallet-related-commands) | [ListAssetIssue](#How-to-obtain-TRC10-token-information) | 
+| [ListExchanges](#Obtain-information-on-trading-pairs) | [ListExchangesPaginated](#Obtain-information-on-trading-pairs) | [ListNodes](#Some-others) | 
+| [ListShieldedTRC20Address](#ListShieldedTRC20Address) | [ListShieldedTRC20Note](#ListShieldedTRC20Note) | [ListProposals](#Obtain-proposal-information) | 
+| [ListProposalsPaginated](#Obtain-proposal-information) | [ListExecutives](#Some-others) | [LoadShieldedTRC20Wallet](#LoadShieldedTRC20Wallet) | 
+| [Login](#Command-line-operation-flow-example) | [MarketCancelOrder](#MarketCancelOrder) | [MarketSellAsset](#MarketSellAsset)| 
+| [ParticipateAssetIssue](#Participating-in-the-issue-of-TRC10-token) | [RegisterWallet](#Wallet-related-commands) | [ResetShieldedTRC20Note](#ResetShieldedTRC20Note) | 
+| [ScanShieldedTRC20NoteByIvk](#ScanShieldedTRC20NoteByIvk) |  [ScanShieldedTRC20NoteByOvk](#ScanShieldedTRC20NoteByOvk) |[SendCoin](#How-to-use-the-multi-signature-feature-of-wallet-cli) | 
+| [SendShieldedTRC20Coin](#SendShieldedTRC20Coin) | [SendShieldedTRC20CoinWithoutAsk](#SendShieldedTRC20CoinWithoutAsk) | [SetShieldedTRC20ContractAddress](#SetShieldedTRC20ContractAddress) | 
+| [ShowShieldedTRC20AddressInfo](#ShowShieldedTRC20AddressInfo) | [TransferAsset](#TRC10-token-transfer) | [TriggerContract](#trigger-smart-contarct) |
+| [UncdAsset](#Uncd-TRC10-token) | [UncdBalance](#How-to-delegate-resource) |[UpdateAsset](#Update-parameters-of-TRC10-token) | 
+| [UpdateBrokerage](#Brokerage) | [UpdateUcrLimit](#update-smart-contract-parameters) |[UpdateSetting](#update-smart-contract-parameters) | 
 | [UpdateAccountPermission](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [VoteExecutive](#How-to-vote) |
 
 Type any one of the listed commands, to display how-to tips.
@@ -552,7 +552,7 @@ Example:
 > ApproveProposal 1 false  # Cancel the approved proposal
 ```
 
-### Delete an existed proposal
+### Delete an existing proposal
 
     > deleteProposal [OwnerAddress] proposalId
 
@@ -2153,7 +2153,7 @@ d  :11db4baf6bd5d5afd3a8b1
 ```
 
 
-## How to use tron-dex to sell asset
+## How to use stabila-dex to sell asset
 
 ### MarketSellAsset
 
