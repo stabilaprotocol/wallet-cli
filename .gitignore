@@ -13,3 +13,7 @@ src/main/resources/static/js/stabilajs/stabila-protoc.js
 Wallet
 logs
 FileTest
+.classpath
+.project
+.settings/
+bin/
