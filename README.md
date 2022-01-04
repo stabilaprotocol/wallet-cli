@@ -92,7 +92,7 @@ For more information on a specific command, just type the command on terminal wh
 | [ParticipateAssetIssue](#Participating-in-the-issue-of-SRC10-token) | [RegisterWallet](#Wallet-related-commands) | [ResetShieldedSRC20Note](#ResetShieldedSRC20Note) | 
 | [ScanShieldedSRC20NoteByIvk](#ScanShieldedSRC20NoteByIvk) |  [ScanShieldedSRC20NoteByOvk](#ScanShieldedSRC20NoteByOvk) |[SendCoin](#How-to-use-the-multi-signature-feature-of-wallet-cli) | 
 | [SendShieldedSRC20Coin](#SendShieldedSRC20Coin) | [SendShieldedSRC20CoinWithoutAsk](#SendShieldedSRC20CoinWithoutAsk) | [SetShieldedSRC20ContractAddress](#SetShieldedSRC20ContractAddress) | 
-| [ShowShieldedSRC20AddressInfo](#ShowShieldedSRC20AddressInfo) | [TransferAsset](#SRC10-token-transfer) | [TriggerContract](#trigger-smart-contarct) |
+| [ShowShieldedSRC20AddressInfo](#ShowShieldedSRC20AddressInfo) | [TransferAsset](#SRC10-token-transfer) | [TriggerContract](#trigger-smart-contract) |
 | [UncdAsset](#Uncd-SRC10-token) | [UncdBalance](#How-to-delegate-resource) |[UpdateAsset](#Update-parameters-of-SRC10-token) | 
 | [UpdateBrokerage](#Brokerage) | [UpdateUcrLimit](#update-smart-contract-parameters) |[UpdateSetting](#update-smart-contract-parameters) | 
 | [UpdateAccountPermission](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [VoteExecutive](#How-to-vote) |
@@ -944,7 +944,7 @@ Get the result of the contract execution with the getTransactionInfoById command
 }
 ```
 
-### trigger smart contarct
+### trigger smart contract
 
     > TriggerContract [ownerAddress] contractAddress method args isHex fee_limit value token_value token_id
 
@@ -952,7 +952,7 @@ OwnerAddress
 > The address of the account that initiated the transaction, optional, default is the address of the login account.
 
 contractAddress
-> Smart contarct address
+> Smart contract address
 
 method
 > The name of function and parameters, please refer to the example
