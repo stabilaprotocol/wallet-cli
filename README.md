@@ -64,36 +64,36 @@ We can configure java-stabila node IP and port in ``src/main/resources/config.co
 Following is a list of Stabila Wallet-cli commands:
 For more information on a specific command, just type the command on terminal when you start your Wallet-cli.
 
-| [AddTransactionSign](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ApproveProposal](#How-to-operate-with-proposal) | [AssetIssue](#How-to-issue-a-TRC10-token) |
+| [AddTransactionSign](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ApproveProposal](#How-to-operate-with-proposal) | [AssetIssue](#How-to-issue-a-SRC10-token) |
 | :---------:|:---------:|:--------: |
-| [BackupShieldedTRC20Wallet](#BackupShieldedTRC20Wallet) | [BackupWallet](#Wallet-related-commands)| [BackupWallet2Base64](#Wallet-related-commands) |
+| [BackupShieldedSRC20Wallet](#BackupShieldedSRC20Wallet) | [BackupWallet](#Wallet-related-commands)| [BackupWallet2Base64](#Wallet-related-commands) |
 | [BroadcastTransaction](#Some-others) | [ChangePassword](#Wallet-related-commands)| [CreateProposal](#How-to-operate-with-proposal) 
 | [DeleteProposal](#Delete-an-existing-proposal) | [DeployContract](#How-to-use-smart-contract) | [ExchangeCreate](#How-to-trade-on-the-exchange) |
 | [ExchangeInject](#Capital-injection) | [ExchangeTransaction](#Transactions) | [ExchangeWithdraw](#Capital-Withdrawal) |
-| [CdBalance](#How-to-cd/uncd-balance) | [GenerateAddress](#Account-related-commands) | [GenerateShieldedTRC20Address](#How-to-transfer-shielded-TRC20-token)|
+| [CdBalance](#How-to-cd/uncd-balance) | [GenerateAddress](#Account-related-commands) | [GenerateShieldedSRC20Address](#How-to-transfer-shielded-SRC20-token)|
 | [GetAccount](#Account-related-commands) |[GetAccountNet](#Account-related-commands) | [GetAccountResource](#Account-related-commands) | 
-| [GetAddress](#Account-related-commands) | [GetAkFromAsk](#How-to-transfer-shielded-TRC20-token) |[GetAssetIssueByAccount](#Update-parameters-of-TRC10-token) | 
-| [GetAssetIssueById](#How-to-obtain-TRC10-token-information) | [GetAssetIssueByName](#How-to-obtain-TRC10-token-information) |[GetAssetIssueListByName](#How-to-obtain-TRC10-token-information) | 
+| [GetAddress](#Account-related-commands) | [GetAkFromAsk](#How-to-transfer-shielded-SRC20-token) |[GetAssetIssueByAccount](#Update-parameters-of-SRC10-token) | 
+| [GetAssetIssueById](#How-to-obtain-SRC10-token-information) | [GetAssetIssueByName](#How-to-obtain-SRC10-token-information) |[GetAssetIssueListByName](#How-to-obtain-SRC10-token-information) | 
 | [GetBalance](#Account-related-commands) | [GetBlock](#How-to-get-block-information) |[GetBlockById](#How-to-get-block-information) | 
 | [GetBlockByLatestNum](#How-to-get-block-information) | [GetBlockByLimitNext](#How-to-get-block-information) | [GetBrokerage](#Brokerage) | 
 | [GetContract](#get-details-of-a-smart-contract) | [GetDelegatedResource](#How-to-delegate-resource) |[GetDelegatedResourceAccountIndex](#get-resource-delegation-information) | 
-| [GetDiversifier](#GetDiversifier)| [GetExpandedSpendingKey](#How-to-transfer-shielded-TRC20-token)| [GetIncomingViewingKey](#GetIncomingViewingKey)  | 
+| [GetDiversifier](#GetDiversifier)| [GetExpandedSpendingKey](#How-to-transfer-shielded-SRC20-token)| [GetIncomingViewingKey](#GetIncomingViewingKey)  | 
 | [GetMarketOrderByAccount](#GetMarketOrderByAccount)| [GetMarketOrderById](#GetMarketOrderById)| [GetMarketOrderListByPair](#GetMarketOrderListByPair)  | 
 | [GetMarketPairList](#GetMarketPairList)| [GetMarketPriceByPair](#GetMarketPriceByPair)| [GetNextMaintenanceTime](#Some-others) | 
-| [GetNkFromNsk](#How-to-transfer-shielded-TRC20-token) | [GetProposal](#Obtain-proposal-information) | [GetShieldedPaymentAddress](#How-to-transfer-shielded-TRC20-token)| 
-| [GetSpendingKey](#How-to-transfer-shielded-TRC20-token) | [GetReward](#Brokerage) |  [GetTransactionApprovedList](#Get-signature-information-according-to-transactions) |
+| [GetNkFromNsk](#How-to-transfer-shielded-SRC20-token) | [GetProposal](#Obtain-proposal-information) | [GetShieldedPaymentAddress](#How-to-transfer-shielded-SRC20-token)| 
+| [GetSpendingKey](#How-to-transfer-shielded-SRC20-token) | [GetReward](#Brokerage) |  [GetTransactionApprovedList](#Get-signature-information-according-to-transactions) |
 | [GetTransactionById](#How-to-get-transaction-information) | [GetTransactionCountByBlockNum](#How-to-get-transaction-information) | [GetTransactionInfoByBlockNum](#How-to-get-transaction-information) | 
-| [GetTransactionInfoById](#How-to-get-transaction-information) | [GetTransactionSignWeight](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ImportShieldedTRC20Wallet](#ImportShieldedTRC20Wallet) | 
-| [ImportWallet](#Wallet-related-commands) | [ImportWalletByBase64](#Wallet-related-commands) | [ListAssetIssue](#How-to-obtain-TRC10-token-information) | 
+| [GetTransactionInfoById](#How-to-get-transaction-information) | [GetTransactionSignWeight](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [ImportShieldedSRC20Wallet](#ImportShieldedSRC20Wallet) | 
+| [ImportWallet](#Wallet-related-commands) | [ImportWalletByBase64](#Wallet-related-commands) | [ListAssetIssue](#How-to-obtain-SRC10-token-information) | 
 | [ListExchanges](#Obtain-information-on-trading-pairs) | [ListExchangesPaginated](#Obtain-information-on-trading-pairs) | [ListNodes](#Some-others) | 
-| [ListShieldedTRC20Address](#ListShieldedTRC20Address) | [ListShieldedTRC20Note](#ListShieldedTRC20Note) | [ListProposals](#Obtain-proposal-information) | 
-| [ListProposalsPaginated](#Obtain-proposal-information) | [ListExecutives](#Some-others) | [LoadShieldedTRC20Wallet](#LoadShieldedTRC20Wallet) | 
+| [ListShieldedSRC20Address](#ListShieldedSRC20Address) | [ListShieldedSRC20Note](#ListShieldedSRC20Note) | [ListProposals](#Obtain-proposal-information) | 
+| [ListProposalsPaginated](#Obtain-proposal-information) | [ListExecutives](#Some-others) | [LoadShieldedSRC20Wallet](#LoadShieldedSRC20Wallet) | 
 | [Login](#Command-line-operation-flow-example) | [MarketCancelOrder](#MarketCancelOrder) | [MarketSellAsset](#MarketSellAsset)| 
-| [ParticipateAssetIssue](#Participating-in-the-issue-of-TRC10-token) | [RegisterWallet](#Wallet-related-commands) | [ResetShieldedTRC20Note](#ResetShieldedTRC20Note) | 
-| [ScanShieldedTRC20NoteByIvk](#ScanShieldedTRC20NoteByIvk) |  [ScanShieldedTRC20NoteByOvk](#ScanShieldedTRC20NoteByOvk) |[SendCoin](#How-to-use-the-multi-signature-feature-of-wallet-cli) | 
-| [SendShieldedTRC20Coin](#SendShieldedTRC20Coin) | [SendShieldedTRC20CoinWithoutAsk](#SendShieldedTRC20CoinWithoutAsk) | [SetShieldedTRC20ContractAddress](#SetShieldedTRC20ContractAddress) | 
-| [ShowShieldedTRC20AddressInfo](#ShowShieldedTRC20AddressInfo) | [TransferAsset](#TRC10-token-transfer) | [TriggerContract](#trigger-smart-contarct) |
-| [UncdAsset](#Uncd-TRC10-token) | [UncdBalance](#How-to-delegate-resource) |[UpdateAsset](#Update-parameters-of-TRC10-token) | 
+| [ParticipateAssetIssue](#Participating-in-the-issue-of-SRC10-token) | [RegisterWallet](#Wallet-related-commands) | [ResetShieldedSRC20Note](#ResetShieldedSRC20Note) | 
+| [ScanShieldedSRC20NoteByIvk](#ScanShieldedSRC20NoteByIvk) |  [ScanShieldedSRC20NoteByOvk](#ScanShieldedSRC20NoteByOvk) |[SendCoin](#How-to-use-the-multi-signature-feature-of-wallet-cli) | 
+| [SendShieldedSRC20Coin](#SendShieldedSRC20Coin) | [SendShieldedSRC20CoinWithoutAsk](#SendShieldedSRC20CoinWithoutAsk) | [SetShieldedSRC20ContractAddress](#SetShieldedSRC20ContractAddress) | 
+| [ShowShieldedSRC20AddressInfo](#ShowShieldedSRC20AddressInfo) | [TransferAsset](#SRC10-token-transfer) | [TriggerContract](#trigger-smart-contarct) |
+| [UncdAsset](#Uncd-SRC10-token) | [UncdBalance](#How-to-delegate-resource) |[UpdateAsset](#Update-parameters-of-SRC10-token) | 
 | [UpdateBrokerage](#Brokerage) | [UpdateUcrLimit](#update-smart-contract-parameters) |[UpdateSetting](#update-smart-contract-parameters) | 
 | [UpdateAccountPermission](#How-to-use-the-multi-signature-feature-of-wallet-cli) | [VoteExecutive](#How-to-vote) |
 
@@ -269,11 +269,11 @@ Balance = 0
 > TransferAsset SWzrEZYtwzkAxXJ8PatVrGuoSNsexejRiM 1000001 10000
 ```
 
-## How to issue a TRC10 token
+## How to issue a SRC10 token
 
-Each account can only issue **ONE** TRC10 token.
+Each account can only issue **ONE** SRC10 token.
 
-### Issue TRC10 tokens
+### Issue SRC10 tokens
 
     > AssetIssue [OwnerAddress] AssetName AbbrName TotalSupply StbNum AssetNum Precision StartDate EndDate Description Url FreeNetLimitPerAccount PublicFreeNetLimit CdedAmount0 CdedDays0 [...] CdedAmountN CdedDaysN
 
@@ -282,10 +282,10 @@ OwnerAddress (optional)
 > Default: the address of the login account.
 
 AssetName
-> The name of the issued TRC10 token
+> The name of the issued SRC10 token
 
 AbbrName
-> The abbreviation of TRC10 token
+> The abbreviation of SRC10 token
 
 TotalSupply
 > TotalSupply = Account Balance of Issuer + All Cded Token Amount
@@ -353,7 +353,7 @@ Example:
 }
 ```
 
-### Update parameters of TRC10 token
+### Update parameters of SRC10 token
 
     > UpdateAsset [OwnerAddress] newLimit newPublicLimit description url
 
@@ -396,7 +396,7 @@ Example:
 }
 ```
 
-### TRC10 token transfer
+### SRC10 token transfer
 
     > TransferAsset [OwnerAddress] ToAddress AssertID Amount
 
@@ -408,11 +408,11 @@ ToAddress
 > Address of the target account
 
 AssertName
-> TRC10 token ID
+> SRC10 token ID
 > Example: 1000001
 
 Amount
-> The number of TRC10 token to transfer
+> The number of SRC10 token to transfer
 
 Example:
 
@@ -429,7 +429,7 @@ address: SN3zfjYUmMFK3ZsHSsrdJoNRtGkQmZLBLz
     }
 ```
 
-### Participating in the issue of TRC10 token
+### Participating in the issue of SRC10 token
 
     > ParticipateAssetIssue [OwnerAddress] ToAddress AssetID Amount
 
@@ -438,16 +438,16 @@ OwnerAddress (optional)
 > Default: the address of the login account.
 
 ToAddress
-> Account address of TRC10 issuers
+> Account address of SRC10 issuers
 
 AssertName
-> TRC10 token ID
+> SRC10 token ID
 > Example: 1000001
 
 Amount
-> The number of TRC10 token to transfers
+> The number of SRC10 token to transfers
 
-The participation process must happen during the release of TRC10, otherwise an error may occur.
+The participation process must happen during the release of SRC10, otherwise an error may occur.
 
 Example:
 
@@ -464,28 +464,28 @@ assetV2
     }
 ```
 
-### Uncd TRC10 token
+### Uncd SRC10 token
 
-To uncd all TRC10 token which are supposed to be uncded after the freezing period.
+To uncd all SRC10 token which are supposed to be uncded after the freezing period.
 
     > uncdasset [OwnerAddress]
 
-## How to obtain TRC10 token information
+## How to obtain SRC10 token information
 
 ListAssetIssue
-> Obtain all of the published TRC10 token information
+> Obtain all of the published SRC10 token information
 
 GetAssetIssueByAccount
-> Obtain TRC10 token information based on issuing address
+> Obtain SRC10 token information based on issuing address
 
 GetAssetIssueById
-> Obtain TRC10 token Information based on ID
+> Obtain SRC10 token Information based on ID
 
 GetAssetIssueByName
-> Obtain TRC10 token Information based on names
+> Obtain SRC10 token Information based on names
 
 GetAssetIssueListByName
-> Obtain a list of TRC10 token information based on names
+> Obtain a list of SRC10 token information based on names
 
 ## How to operate with proposal
 
@@ -595,7 +595,7 @@ First_token_id, first_token_balance
 second_token_id, second_token_balance
 > ID and amount of the second token
 >
-> The ID is the ID of the issued TRC10 token. 
+> The ID is the ID of the issued SRC10 token. 
 > If it is STB, the ID is "_". 
 > The amount must be greater than 0, and less than 1,000,000,000,000,000.
 
@@ -970,7 +970,7 @@ token_value
 > Number of STB10
 
 token_id
-> TRC10 id, If not, use ‘#’ instead
+> SRC10 id, If not, use ‘#’ instead
 
 Example:
 
@@ -1538,16 +1538,16 @@ d  :2fd028965d3b455579ab28
 ```
 -->
 
-## How to transfer shielded TRC20 token
+## How to transfer shielded SRC20 token
 
-If you want to try to transfer shielded TRC20 token, you'd better set the `blockNumberStartToScan` field in `config.conf` file.
+If you want to try to transfer shielded SRC20 token, you'd better set the `blockNumberStartToScan` field in `config.conf` file.
 This field is used to set the starting block that the wallet needs to scan. If you ignore this field, or set it to 0, 
 the notes you receive will probably take a long time to show up in the wallet. It is recommended that this field is 
 set to the block number in which the earliest relevant shielded contract was created. If the exact number is not known, 
 this field can be set as follows. If used in mainnet, please set 22690588. If used in Nile testnet, please set 6380000. 
 Otherwise, please set 0.
 
-When you begin to transfer TRC20 token to shielded address, you must have a shielded address. The
+When you begin to transfer SRC20 token to shielded address, you must have a shielded address. The
  following commands help to generate shielded account.
 
 ### GetSpendingKey
@@ -1647,18 +1647,18 @@ pkd:65c11642115d386ed716b9cc06a3498e86e303d7f20d0869c9de90e31322ac15
 shieldedAddress:zstabila1z8d5htmt6h26l5agk4juz9jzz9wnsmkhz6uucp4rfx8gdccr6leq6zrfe80fpccny2kp2cray8z
 ```
 
-### SetShieldedTRC20ContractAddress
+### SetShieldedSRC20ContractAddress
 
 ```console
-> SetShieldedTRC20ContractAddress TRC20ContractAddress ShieldedContractAddress
+> SetShieldedSRC20ContractAddress SRC20ContractAddress ShieldedContractAddress
 ```
-TRC20ContractAddress
-> TRC20 contract address
+SRC20ContractAddress
+> SRC20 contract address
 
 ShieldedContractAddress
 > Shielded contract address
 
-Set TRC20 contract address and shielded contract address. Please execute this command before you perform all the following operations related to the shielded transaction of TRC20 token except `ScanShieldedTRC20NoteByIvk` and `ScanShieldedTRC20NoteByOvk`.
+Set SRC20 contract address and shielded contract address. Please execute this command before you perform all the following operations related to the shielded transaction of SRC20 token except `ScanShieldedSRC20NoteByIvk` and `ScanShieldedSRC20NoteByOvk`.
 
 When you execute this command, the `Scaling Factor` will be shown. The `Scaling Factor` is set in
  the shielded contract. 
@@ -1668,57 +1668,57 @@ When you execute this command, the `Scaling Factor` will be shown. The `Scaling 
 Example:
 
 ```console
-> SetShieldedTRC20ContractAddress SLDxNTzNvEPd4gHox8V1zK2w82LFnideKE SKERuAmhJh8vZi1dzJtx8926xeCT74747e
+> SetShieldedSRC20ContractAddress SLDxNTzNvEPd4gHox8V1zK2w82LFnideKE SKERuAmhJh8vZi1dzJtx8926xeCT74747e
 scalingFactor():ed3437f8
-SetShieldedTRC20ContractAddress succeed!
+SetShieldedSRC20ContractAddress succeed!
 The Scaling Factor is 1000
 That means:
 No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
 ```
 
-### LoadShieldedTRC20Wallet
+### LoadShieldedSRC20Wallet
 
-Load TRC20 shielded address, shielded note and start to scan by ivk.
+Load SRC20 shielded address, shielded note and start to scan by ivk.
 
 Example:
 
 ```console
-> LoadShieldedTRC20Wallet
-Please input your password for shieldedTRC20 wallet.
+> LoadShieldedSRC20Wallet
+Please input your password for shieldedSRC20 wallet.
 > *******
-LoadShieldedTRC20Wallet successful !!!
+LoadShieldedSRC20Wallet successful !!!
 ```
 
-### GenerateShieldedTRC20Address
+### GenerateShieldedSRC20Address
 
 ```console
-> GenerateShieldedTRC20Address number
+> GenerateShieldedSRC20Address number
 ```
 number
-> The number of TRC20 shielded addresses, the default is 1.
+> The number of SRC20 shielded addresses, the default is 1.
 
-Generate TRC20 shielded addresses.
+Generate SRC20 shielded addresses.
 
 Example:
 
 ```console
-> GenerateShieldedTRC20Address 3
-ShieldedTRC20Address list:
+> GenerateShieldedSRC20Address 3
+ShieldedSRC20Address list:
 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc
 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf
 zstabila109r3w5gpm0qcf67r67a9ftjt3zy9wmzux4fqgtgcql8gwhcmauv5dm6t9t9x9ht7h3lvs8shxhq
-GenerateShieldedTRC20Address successful !!!
+GenerateShieldedSRC20Address successful !!!
 ```
 
-### ListShieldedTRC20Address
+### ListShieldedSRC20Address
 
-Display cached local TRC20 shielded address list.
+Display cached local SRC20 shielded address list.
 
 Example:
 
 ```console
-> ListShieldedTRC20Address
-ShieldedTRC20Address :
+> ListShieldedSRC20Address
+ShieldedSRC20Address :
 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf
 zstabila109r3w5gpm0qcf67r67a9ftjt3zy9wmzux4fqgtgcql8gwhcmauv5dm6t9t9x9ht7h3lvs8shxhq
 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc
@@ -1726,15 +1726,15 @@ zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkr
 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46
 ```
 
-### SendShieldedTRC20Coin
+### SendShieldedSRC20Coin
 
-> SendShieldedTRC20Coin fromAmount shieldedInputNum input1 input2 ... publicToAddress toAmount shieldedOutputNum shieldedAddress1 amount1 memo1 shieldedAddress2 amount2 memo2 ....
+> SendShieldedSRC20Coin fromAmount shieldedInputNum input1 input2 ... publicToAddress toAmount shieldedOutputNum shieldedAddress1 amount1 memo1 shieldedAddress2 amount2 memo2 ....
 
 Shielded transfer, support three types:
 
 - MINT: transfer from one public address to one shielded address, fromAmount should be equal to
  the shielded output amount. When you MINT, you need to enter password twice as prompted, one
- time is for triggering `approve` method of TRC20 contract that allows the shielded contract can
+ time is for triggering `approve` method of SRC20 contract that allows the shielded contract can
  transfer form your account, and other one is for triggering `mint` method of shielded contract
  that executes MINT. It's important to remember that you must use the same public address to
  trigger these two methods. 
@@ -1757,7 +1757,7 @@ shieldedInputNum
 > The number of shielded input note, should be 0, 1 or 2. If the transfer type is MINT, this variable must be 0; if BURN, it must be 1.
 
 input1/input2
-> The index of shielded input note, get from executing command ListShieldedTRC20Note. If shieldedInputNum set to 0, no need to set.
+> The index of shielded input note, get from executing command ListShieldedSRC20Note. If shieldedInputNum set to 0, no need to set.
 
 publicToAddress
 > Public to address. If the transfer type is BURN, this variable must be a valid address, otherwise it should be set null.
@@ -1786,7 +1786,7 @@ In this example, the scalingFactor is 1000.
     **In this mode, some variables must be set as follows, shieldedInputNum = 0, publicToAddress = null, toAmount = 0.**
 
     ```console
-    > SendShieldedTRC20Coin 1000000000000 0 null 0 1 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1000000000000 null
+    > SendShieldedSRC20Coin 1000000000000 0 null 0 1 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1000000000000 null
     ```
 
 2. TRANSFER
@@ -1795,37 +1795,37 @@ In this example, the scalingFactor is 1000.
 
     Transfer from one shielded address to one shielded address.
     ```console
-    > ListShieldedTRC20Note
+    > ListShieldedSRC20Note
     This command will show all the unspent notes.
-    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedTRC20Note 1
+    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedSRC20Note 1
     The unspent note list is shown below:
     9 zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 2000000000000 23f171f6552680b553707715bead8de807a70255c0b091f7e788bf3b59fe3bea 1 UnSpend
     8 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1000000000000 23f171f6552680b553707715bead8de807a70255c0b091f7e788bf3b59fe3bea 0 UnSpend
     The Scaling Factor is 1000
     No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
     
-    > SendShieldedTRC20Coin 0 1 8 null 0 1 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1000000000000 null
+    > SendShieldedSRC20Coin 0 1 8 null 0 1 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1000000000000 null
     ```
 
     Transfer from one shielded address to two shielded addresses.
     ```console
-    > ListShieldedTRC20Note
+    > ListShieldedSRC20Note
     This command will show all the unspent notes.
-    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedTRC20Note 1
+    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedSRC20Note 1
     The unspent note list is shown below:
     9 zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 2000000000000 23f171f6552680b553707715bead8de807a70255c0b091f7e788bf3b59fe3bea 1 UnSpend
     10 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1000000000000 81a06080f2be3f795c506826e066b9bb5327ca234eb31a0ef2446e11339a3935 0 UnSpend
     The Scaling Factor is 1000
     No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
     
-    > SendShieldedTRC20Coin 0 1 9 null 0 2 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1500000000000 test1 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 500000000000 null
+    > SendShieldedSRC20Coin 0 1 9 null 0 2 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1500000000000 test1 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 500000000000 null
     ```
 
     Transfer from two shielded addresses to one shielded address.
     ```console
-    > ListShieldedTRC20Note
+    > ListShieldedSRC20Note
     This command will show all the unspent notes.
-    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedTRC20Note 1
+    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedSRC20Note 1
     The unspent note list is shown below:
     11 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1500000000000 35901973a96369618e5e3f7f4dcede2b5ddb5bc99bf6feac29f2706420ea99c0 0 UnSpend test1
     10 zstabila1da9rnkmnzl89kqq87gzh534xmkdhq9cnm0j39lackskrhflfe9d26chnq3adl86es0jm2098hzc 1000000000000 81a06080f2be3f795c506826e066b9bb5327ca234eb31a0ef2446e11339a3935 0 UnSpend
@@ -1833,68 +1833,68 @@ In this example, the scalingFactor is 1000.
     The Scaling Factor is 1000
     No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000    
     
-    > SendShieldedTRC20Coin 0 2 10 11 null 0 1 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 2500000000000 null
+    > SendShieldedSRC20Coin 0 2 10 11 null 0 1 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 2500000000000 null
     ```
 
     Transfer from two shielded addresses to two shielded addresses.
     ```console
-    > ListShieldedTRC20Note
+    > ListShieldedSRC20Note
     This command will show all the unspent notes.
-    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedTRC20Note 1
+    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedSRC20Note 1
     The unspent note list is shown below:
     13 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 2500000000000 6ec74435e32261a6dfe10f9498b3ab5a5cfede7c4e31299752b449b9506efc11 0 UnSpend
     12 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 500000000000 35901973a96369618e5e3f7f4dcede2b5ddb5bc99bf6feac29f2706420ea99c0 1 UnSpend   
     The Scaling Factor is 1000
     No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
     
-    > SendShieldedTRC20Coin 0 2 12 13 null 0 2 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1300000000000 null zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 1700000000000 null
+    > SendShieldedSRC20Coin 0 2 12 13 null 0 2 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1300000000000 null zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 1700000000000 null
     ```
 
 3. BURN 
 
     **In this mode, some variables must be set as follows, fromAmount = 0, shieldedInputNum = 1.**
     ```console
-    > ListShieldedTRC20Note
+    > ListShieldedSRC20Note
     This command will show all the unspent notes.
-    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedTRC20Note 1
+    If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedSRC20Note 1
     The unspent note list is shown below:
     15 zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 1700000000000 7291b2c58cafb4dede626388f12e846470441f9bb05581221fd742bdd8909a24 1 UnSpend
     14 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1300000000000 7291b2c58cafb4dede626388f12e846470441f9bb05581221fd742bdd8909a24 0 UnSpend
     The Scaling Factor is 1000
     No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
 
-    > SendShieldedTRC20Coin 0 1 14 SDVr15jvAx6maR28tP7RRpxuKZ38tgsyNE 1300000000000000 0
-    > SendShieldedTRC20Coin 0 1 14 SDVr15jvAx6maR28tP7RRpxuKZ38tgsyNE 300000000000000 1 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 1000000000000000 null
+    > SendShieldedSRC20Coin 0 1 14 SDVr15jvAx6maR28tP7RRpxuKZ38tgsyNE 1300000000000000 0
+    > SendShieldedSRC20Coin 0 1 14 SDVr15jvAx6maR28tP7RRpxuKZ38tgsyNE 300000000000000 1 zstabila1mm20lkcpj6tx6jfd6ek5fxkgmpk9f2hda6vxdtkwlzr45ez32wa7dt8uka9xwfqamr7zyk7jpzf 1000000000000000 null
     ```
 
-### SendShieldedTRC20CoinWithoutAsk
+### SendShieldedSRC20CoinWithoutAsk
 
-Usage and parameters are consistent with the command SendShieldedTRC20Coin, the only difference is that SendShieldedTRC20Coin uses ask for signature, but SendShieldedTRC20CoinWithoutAsk uses ak.
+Usage and parameters are consistent with the command SendShieldedSRC20Coin, the only difference is that SendShieldedSRC20Coin uses ask for signature, but SendShieldedSRC20CoinWithoutAsk uses ak.
 
-### ListShieldedTRC20Note
+### ListShieldedSRC20Note
 
 ```console
-> ListShieldedTRC20Note type
+> ListShieldedSRC20Note type
 ```
 type
 > Shows the type of note. If the variable is omitted or set to 0, it shows all unspent notes; For other values, it shows all the notes, including spent notes and unspent notes.
 
 List the note scanned by the local cache address, and the `Scaling Factor`.
 
-**NOTE** When you load shielded wallet, the wallet will scan blocks to find the notes others send to you in the backend. This will take a long time, so when you run `ListShieldedTRC20Note`, your notes will not be displayed immediately.
+**NOTE** When you load shielded wallet, the wallet will scan blocks to find the notes others send to you in the backend. This will take a long time, so when you run `ListShieldedSRC20Note`, your notes will not be displayed immediately.
 
 Example:
 
 ```console
-> ListShieldedTRC20Note
+> ListShieldedSRC20Note
 This command will show all the unspent notes.
-If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedTRC20Note 1
+If you want to display all notes, including spent notes and unspent notes, please use command ListShieldedSRC20Note 1
 The unspent note list is shown below:
 15 zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 1700000000000 7291b2c58cafb4dede626388f12e846470441f9bb05581221fd742bdd8909a24 1 UnSpend
 The Scaling Factor is 1000
 No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
 
-> ListShieldedTRC20Note 1
+> ListShieldedSRC20Note 1
 All notes are shown below:
 zstabila1tjgkfk9hgrl0u6d07w3hq0s9jtgq9q64vek3e5l447dmnzhe27yy0ftpee45h07sa092wkrgrjl 1700000000000 7291b2c58cafb4dede626388f12e846470441f9bb05581221fd742bdd8909a24 1 15 UnSpent
 zstabila15t3c27a5ve43ssflqepa8dke36vzvccxrren4ma2lghu3hle8rtwltufnvvzrm76w042s9p5f46 1000000000000 dc02678b0cf1c93c557dc805edb776fe79201c77f210f08f60cea5d687b14f2e 0 0 Spent
@@ -1916,17 +1916,17 @@ The Scaling Factor is 1000
 No matter you MINT, TRANSFER or BURN, the value must be an integer multiple of 1000
 ```
 
-### ResetShieldedTRC20Note
+### ResetShieldedSRC20Note
 
 Clean all the notes scanned, and rescan all blocks. Generally used when there is a problem with the notes or when switching environments.
 
-### ScanShieldedTRC20NoteByIvk
+### ScanShieldedSRC20NoteByIvk
 
 ```console
-> ScanShieldedTRC20NoteByIvk shieldedTRC20ContractAddress ivk ak nk startNum endNum [event1] [event2] ...
+> ScanShieldedSRC20NoteByIvk shieldedSRC20ContractAddress ivk ak nk startNum endNum [event1] [event2] ...
 ```
 
-shieldedTRC20ContractAddress
+shieldedSRC20ContractAddress
 > The address of shielded contract
 
 ivk
@@ -1952,7 +1952,7 @@ Scan notes by ivk, ak and nk.
 Example:
 
 ```console
-> ScanShieldedTRC20NoteByIvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu fed8fa4714e6a19511760f9b8ed33388f14c626adff26034f4a21557cb928f01 faf63a2d959df05d4441c0fd42262e0a53629c532e8d29501fe94f9d86c51313 66458c23d737a30146533374d7c5c78f3e05f8f158192e8855493cc55cf8953f 5000 5400
+> ScanShieldedSRC20NoteByIvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu fed8fa4714e6a19511760f9b8ed33388f14c626adff26034f4a21557cb928f01 faf63a2d959df05d4441c0fd42262e0a53629c532e8d29501fe94f9d86c51313 66458c23d737a30146533374d7c5c78f3e05f8f158192e8855493cc55cf8953f 5000 5400
 [
     {
         note: {
@@ -1968,7 +1968,7 @@ Example:
     }
 ]
 
-> ScanShieldedTRC20NoteByIvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu fed8fa4714e6a19511760f9b8ed33388f14c626adff26034f4a21557cb928f01  faf63a2d959df05d4441c0fd42262e0a53629c532e8d29501fe94f9d86c51313 66458c23d737a30146533374d7c5c78f3e05f8f158192e8855493cc55cf8953f 5000  6000 MintNewLeaf(uint256,bytes32,bytes32,bytes32,bytes32[21])
+> ScanShieldedSRC20NoteByIvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu fed8fa4714e6a19511760f9b8ed33388f14c626adff26034f4a21557cb928f01  faf63a2d959df05d4441c0fd42262e0a53629c532e8d29501fe94f9d86c51313 66458c23d737a30146533374d7c5c78f3e05f8f158192e8855493cc55cf8953f 5000  6000 MintNewLeaf(uint256,bytes32,bytes32,bytes32,bytes32[21])
 [
     {
         note: {
@@ -1983,7 +1983,7 @@ Example:
     }
 ] 
 
-> ScanShieldedTRC20NoteByIvk TVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu fed8fa4714e6a19511760f9b8ed33388f14c626adff26034f4a21557cb928f01 faf63a2d959df05d4441c0fd42262e0a53629c532e8d29501fe94f9d86c51313 66458c23d737a30146533374d7c5c78f3e05f8f158192e8855493cc55cf8953f 5000 5400 BurnNewLeaf(uint256,bytes32,bytes32,bytes32,bytes32[21])
+> ScanShieldedSRC20NoteByIvk TVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu fed8fa4714e6a19511760f9b8ed33388f14c626adff26034f4a21557cb928f01 faf63a2d959df05d4441c0fd42262e0a53629c532e8d29501fe94f9d86c51313 66458c23d737a30146533374d7c5c78f3e05f8f158192e8855493cc55cf8953f 5000 5400 BurnNewLeaf(uint256,bytes32,bytes32,bytes32,bytes32[21])
 [
     {
         note: {
@@ -1999,12 +1999,12 @@ Example:
 ]
 ```
 
-## ScanShieldedTRC20NoteByOvk
+## ScanShieldedSRC20NoteByOvk
 
 ```console
-> ScanShieldedTRC20NoteByOvk shieldedTRC20ContractAddress ovk startNum endNum [event1] [event2] ...
+> ScanShieldedSRC20NoteByOvk shieldedSRC20ContractAddress ovk startNum endNum [event1] [event2] ...
 ```
-shieldedTRC20ContractAddress
+shieldedSRC20ContractAddress
 > The address of shielded contract
 
 ovk
@@ -2025,7 +2025,7 @@ Scan notes by ovk
 Example:
 
 ```console
-> ScanShieldedTRC20NoteByOvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu 4b33fc947a53a5e2a1d1636b323f7f6cecff8c34c9fc511ccc7cfaf0dd6f4c03 5000 6000
+> ScanShieldedSRC20NoteByOvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu 4b33fc947a53a5e2a1d1636b323f7f6cecff8c34c9fc511ccc7cfaf0dd6f4c03 5000 6000
 [
     {
         note: {
@@ -2052,7 +2052,7 @@ Example:
     }
 ]
 
-> ScanShieldedTRC20NoteByOvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu 4b33fc947a53a5e2a1d1636b323f7f6cecff8c34c9fc511ccc7cfaf0dd6f4c03 5000 6000  BurnNewLeaf(uint256,bytes32,bytes32,bytes32,bytes32[21])  TokenBurn(address,uint256,bytes32[3])
+> ScanShieldedSRC20NoteByOvk SVqa39sqP8ZJNTWjtKrDRifGdVmA4Ycsxu 4b33fc947a53a5e2a1d1636b323f7f6cecff8c34c9fc511ccc7cfaf0dd6f4c03 5000 6000  BurnNewLeaf(uint256,bytes32,bytes32,bytes32,bytes32[21])  TokenBurn(address,uint256,bytes32[3])
 [
     {
         note: {
@@ -2080,65 +2080,65 @@ Example:
 ]
 ```
 
-### BackupShieldedTRC20Wallet
+### BackupShieldedSRC20Wallet
 
 Back up one shielded address.
 
 Example:
 
 ```console
-> BackupShieldedTRC20Wallet
-Please input your password for shieldedTRC20 wallet.
+> BackupShieldedSRC20Wallet
+Please input your password for shieldedSRC20 wallet.
 password:
-The 1th shieldedTRC20 address is zstabila1mf0a0cy86j8rmn4l7dcdsnhyj2k46rem4qxwjqh4z0x26utlddtmmr5fk5dchzt2hpujyvgk69z
-The 2th shieldedTRC20 address is zstabila1mnkdjl0802dqha9ufh4m80f2ua9cff2hct8geeh77llrz4ywgtu0ct8ygy6k5xavdkd278jyttj
-The 3th shieldedTRC20 address is zstabila1z8d5htmt6h26l5agk5nlxdlz66fahhcp8vwhyydrwfdajc5yalftew5uhwn6wjz4pwrxu0msu34
+The 1th shieldedSRC20 address is zstabila1mf0a0cy86j8rmn4l7dcdsnhyj2k46rem4qxwjqh4z0x26utlddtmmr5fk5dchzt2hpujyvgk69z
+The 2th shieldedSRC20 address is zstabila1mnkdjl0802dqha9ufh4m80f2ua9cff2hct8geeh77llrz4ywgtu0ct8ygy6k5xavdkd278jyttj
+The 3th shieldedSRC20 address is zstabila1z8d5htmt6h26l5agk5nlxdlz66fahhcp8vwhyydrwfdajc5yalftew5uhwn6wjz4pwrxu0msu34
 Please choose between 1 and 3
 1
 sk:01ef2d71f8eef668e12db7aef1267c7d6a8f43c84dffa66fc09e2c749464190e
 d :da5fd7e087d48e3dcebff3
-BackupShieldedTRC20Wallet successful !!!
+BackupShieldedSRC20Wallet successful !!!
 ```
 
-### ImportShieldedTRC20Wallet
+### ImportShieldedSRC20Wallet
 
 Import one shielded address to local wallet.
 
 Example:
 
 ```console
-> ImportShieldedTRC20Wallet
-ShieldedTRC20 wallet does not exist, will build it.
+> ImportShieldedSRC20Wallet
+ShieldedSRC20 wallet does not exist, will build it.
 Please input password.
 password:
 Please input password again.
 password:
-Please input shieldedTRC20 wallet hex string. such as 'sk d',Max retry time:3
+Please input shieldedSRC20 wallet hex string. such as 'sk d',Max retry time:3
 0eb458b309fa544066c40d80ce30a8002756c37d2716315c59a98c893dbb000a 11db4baf6bd5d5afd3a8b5
-Import shieldedTRC20 wallet hex string is :
+Import shieldedSRC20 wallet hex string is :
 sk:0eb458b309fa544066c40d80ce30a8002756c37d2716315c59a98c893dbb000a
 d :11db4baf6bd5d5afd3a8b5
-Import new shieldedTRC20 wallet address is: zstabila1z8d5htmt6h26l5agk5nlxdlz66fahhcp8vwhyydrwfdajc5yalftew5uhwn6wjz4pwrxu0msu34
-ImportShieldedTRC20Wallet successfully !!!
+Import new shieldedSRC20 wallet address is: zstabila1z8d5htmt6h26l5agk5nlxdlz66fahhcp8vwhyydrwfdajc5yalftew5uhwn6wjz4pwrxu0msu34
+ImportShieldedSRC20Wallet successfully !!!
 ```
 
-### ShowShieldedTRC20AddressInfo
+### ShowShieldedSRC20AddressInfo
 
 ```console
-> ShowShieldedTRC20AddressInfo address
+> ShowShieldedSRC20AddressInfo address
 ```
 Display information about shielded addresses. If this address is not in the wallet, it will only display `d` and `pkd`
 
 Example:
 
 ```console
-> ListShieldedTRC20Address
-ShieldedTRC20Address :
+> ListShieldedSRC20Address
+ShieldedSRC20Address :
 zstabila1mf0a0cy86j8rmn4l7dcdsnhyj2k46rem4qxwjqh4z0x26utlddtmmr5fk5dchzt2hpujyvgk69z
 zstabila1mnkdjl0802dqha9ufh4m80f2ua9cff2hct8geeh77llrz4ywgtu0ct8ygy6k5xavdkd278jyttj
 zstabila1z8d5htmt6h26l5agk5nlxdlz66fahhcp8vwhyydrwfdajc5yalftew5uhwn6wjz4pwrxu0msu34
 
-> ShowShieldedTRC20AddressInfo zstabila1mf0a0cy86j8rmn4l7dcdsnhyj2k46rem4qxwjqh4z0x26utlddtmmr5fk5dchzt2hpujyvgk69z
+> ShowShieldedSRC20AddressInfo zstabila1mf0a0cy86j8rmn4l7dcdsnhyj2k46rem4qxwjqh4z0x26utlddtmmr5fk5dchzt2hpujyvgk69z
 The following variables are secret information, please don't show to other people!!!
 sk :01ef2d71f8eef668e12db7aef1267c7d6a8f43c84dffa66fc09e2c749464190e
 ivk:7d2e9c14ff1d82843f39cb69e8bcc228370e4ea8750669bba79e90c485d94c03
@@ -2146,7 +2146,7 @@ ovk:2c3d164fffa63b41a34f495e0c9d8af79d595cfb07db1539545ddcecf046d66e
 pkd:70d84ee492ad5d0f3ba80ce902f513ccad717f6b57bd8e89b51b8b896ab87922
 d  :da5fd7e087d48e3dcebff3
 
-> ShowShieldedTRC20AddressInfo zstabila1z8d5htmt6h26l5agk8r7wxw9pyhc0a78hl5thva4k9kcn7fsqvygchyt3n2ncy0r4xv4j5mywnu
+> ShowShieldedSRC20AddressInfo zstabila1z8d5htmt6h26l5agk8r7wxw9pyhc0a78hl5thva4k9kcn7fsqvygchyt3n2ncy0r4xv4j5mywnu
 pkd:c7e719c5092f87f7c7bfe8bbb3b5b16d89f93003088c5c8b8cd53c11e3a99959
 d  :11db4baf6bd5d5afd3a8b1
 ```
