@@ -134,7 +134,7 @@ After being uncded, it is transferred back to Balance by Cded, and the cded fund
 When more share or bandwidth is needed temporarily, additional funds may be cded to obtain additional share and bandwidth.
 The uncded time is postponed until 3 days after the last cd operation
 
-After the freezing time expires, funds can be unfroze.
+After the CDing time expires, funds can be UNCDed.
 
 **Uncd operation is as follows:**
 
@@ -144,10 +144,10 @@ After the freezing time expires, funds can be unfroze.
 
 ## How to vote
 
-Voting requires share. Share can be obtained by freezing funds.
+Voting requires share. Share can be obtained by CDing funds.
 
 - The share calculation method is: **1** unit of share can be obtained for every **1STB** cded.
-- After unfreezing, previous vote will expire. You can avoid the invalidation of the vote by re-freezing and voting.
+- After UNCDing, previous vote will expire. You can avoid the invalidation of the vote by re-CDing and voting.
 
 **NOTE** The Stabila Network only records the status of your last vote, which means that each of your votes will overwrite all previous voting results.
 
@@ -217,12 +217,12 @@ The bandwidth calculation rule is:
 
 Assuming cd 1STB（1_000_000 Unit), 3 days, bandwidth obtained = 1 * 1_000_000 * 3 = 3_000_000.
 
-All contracts consume bandwidth, including transferring, transferring of assets, voting, freezing, etc.
+All contracts consume bandwidth, including transferring, transferring of assets, voting, CDing, etc.
 Querying does not consume bandwidth. Each contract needs to consume **100_000 bandwidth**.
 
 If a contract exceeds a certain time (**10s**), this operation does not consume bandwidth.
 
-When the unfreezing operation occurs, the bandwidth is not cleared.
+When the UNCDing operation occurs, the bandwidth is not cleared.
 The next time the cd is performed, the newly added bandwidth is accumulated.
 
 ## How to withdraw balance
@@ -466,7 +466,7 @@ assetV2
 
 ### Uncd SRC10 token
 
-To uncd all SRC10 token which are supposed to be uncded after the freezing period.
+To uncd all SRC10 token which are supposed to be uncded after the CDing period.
 
     > uncdasset [OwnerAddress]
 
